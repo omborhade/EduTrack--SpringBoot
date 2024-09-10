@@ -14,28 +14,61 @@ This is a EduTrack web-based  application implemented in Java using Springboot a
 
 ## Project Structure
 
-EduTrack/
+EduTrack-SpringBoot/
+│
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/edutrack/
-│   │   │       ├── controller/
-│   │   │       ├── service/
-│   │   │       ├── repository/
-│   │   │       ├── model/
-│   │   │       └── EduTrackApplication.java
+│   │   │   └── com/
+│   │   │       └── edutrack/
+│   │   │           ├── controller/
+│   │   │           │   ├── AttendanceController.java
+│   │   │           │   └── ClassroomController.java
+│   │   │           ├── service/
+│   │   │           │   ├── AttendanceService.java
+│   │   │           │   └── ClassroomService.java
+│   │   │           ├── repository/
+│   │   │           │   ├── AttendanceRepository.java
+│   │   │           │   └── ClassroomRepository.java
+│   │   │           ├── model/
+│   │   │           │   ├── Attendance.java
+│   │   │           │   └── Classroom.java
+│   │   │           ├── security/
+│   │   │           │   ├── WebSecurityConfig.java
+│   │   │           │   └── CustomUserDetailsService.java
+│   │   │           ├── exception/
+│   │   │           │   └── ResourceNotFoundException.java
+│   │   │           └── EduTrackApplication.java
 │   │   ├── resources/
 │   │   │   ├── application.properties
-│   │   │   └── data.sql
+│   │   │   ├── data.sql
+│   │   │   ├── schema.sql
+│   │   │   ├── static/
+│   │   │   │   ├── css/
+│   │   │   │   │   └── styles.css
+│   │   │   │   ├── js/
+│   │   │   │   │   └── scripts.js
+│   │   │   ├── templates/
+│   │   │   │   ├── index.html
+│   │   │   │   └── dashboard.html
 │   │   └── webapp/
 │   │       └── WEB-INF/
-├── test/
-│   └── java/
-│       └── com/edutrack/
+│   │           ├── views/
+│   │           │   ├── login.html
+│   │           │   └── register.html
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── edutrack/
+│                   └── EduTrackApplicationTests.java
+│
+├── .gitignore
+├── mvnw
+├── mvnw.cmd
 ├── pom.xml
 ├── README.md
-└── .gitignore
-
+└── logs/
+    └── application.log
 
 
 
