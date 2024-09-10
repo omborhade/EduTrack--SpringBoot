@@ -18,27 +18,23 @@ EduTrack/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   ├── com/edutrack/
-│   │   │   │   ├── EduTrackApplication.java
-│   │   │   │   ├── controller/
-│   │   │   │   ├── service/
-│   │   │   │   ├── dao/
-│   │   │   │   ├── model/
-│   │   │   │   ├── config/
+│   │   │   └── com/edutrack/
+│   │   │       ├── controller/
+│   │   │       ├── service/
+│   │   │       ├── repository/
+│   │   │       ├── model/
+│   │   │       └── EduTrackApplication.java
 │   │   ├── resources/
 │   │   │   ├── application.properties
-│   │   │   ├── data.sql
-│   │   │   ├── schema.sql
-│   │   │   ├── templates/  
-│   │   │   │   ├── email-template.html
-│   │   │   ├── static/
-│   ├── test/
-│   │   ├── java/
-│   │   │   ├── com/edutrack/
-│   │   │   │   ├── EduTrackApplicationTests.java
-├── .gitignore
+│   │   │   └── data.sql
+│   │   └── webapp/
+│   │       └── WEB-INF/
+├── test/
+│   └── java/
+│       └── com/edutrack/
 ├── pom.xml
-├── README.md 
+├── README.md
+└── .gitignore
 
 
 
